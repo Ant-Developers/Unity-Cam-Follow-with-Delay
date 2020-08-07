@@ -21,11 +21,11 @@ public class playerFollow : MonoBehaviour
         {
             StartCoroutine("followDelaySmooth");
         }
-        else if (Delay)
+        else if (Delay == true && SmoothMove == false)
         {
             StartCoroutine("follow");
         }
-        else if(SmoothMove)
+        else if(SmoothMove == true && Delay == false)
         {
             followSmooth();
         }
